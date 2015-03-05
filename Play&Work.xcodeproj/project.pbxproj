@@ -13,6 +13,7 @@
 		B4D63F1A1AA91A330048E3CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4D63F191AA91A330048E3CC /* Images.xcassets */; };
 		B4D63F1D1AA91A330048E3CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D63F1B1AA91A330048E3CC /* LaunchScreen.xib */; };
 		B4D63F291AA91A330048E3CC /* Play_WorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D63F281AA91A330048E3CC /* Play_WorkTests.swift */; };
+		B4D63F351AA91AFF0048E3CC /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		B4D63F221AA91A330048E3CC /* Play&WorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Play&WorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D63F271AA91A330048E3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D63F281AA91A330048E3CC /* Play_WorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play_WorkTests.swift; sourceTree = "<group>"; };
+		B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				B4D63F121AA91A330048E3CC /* AppDelegate.swift */,
 				B4D63F141AA91A330048E3CC /* ViewController.swift */,
+				B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */,
 				B4D63F161AA91A330048E3CC /* Main.storyboard */,
 				B4D63F191AA91A330048E3CC /* Images.xcassets */,
 				B4D63F1B1AA91A330048E3CC /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D63F351AA91AFF0048E3CC /* PlaylistDetailViewController.swift in Sources */,
 				B4D63F151AA91A330048E3CC /* ViewController.swift in Sources */,
 				B4D63F131AA91A330048E3CC /* AppDelegate.swift in Sources */,
 			);

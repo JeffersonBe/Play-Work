@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-Oq-RRl">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <rect key="frame" x="137" y="409" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,11 +26,20 @@
                                     <segue destination="N9h-v3-KNy" kind="push" identifier="showPlaylistDetail" id="2pz-i4-vWZ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="SBk-of-zBY">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5na-wx-0Y7"/>
+                                    <constraint firstAttribute="height" constant="200" id="qQl-JM-515"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.22470861673355103" green="0.99864107370376587" blue="0.92243188619613647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="O2k-Oq-RRl" secondAttribute="centerX" id="ki5-dU-mhn"/>
-                            <constraint firstAttribute="centerY" secondItem="O2k-Oq-RRl" secondAttribute="centerY" id="vuL-Fz-wW8"/>
+                            <constraint firstItem="O2k-Oq-RRl" firstAttribute="centerX" secondItem="SBk-of-zBY" secondAttribute="centerX" id="4oQ-ne-tdd"/>
+                            <constraint firstAttribute="centerY" secondItem="SBk-of-zBY" secondAttribute="centerY" id="Ce4-Ke-3MJ"/>
+                            <constraint firstAttribute="centerX" secondItem="SBk-of-zBY" secondAttribute="centerX" id="dDb-G0-E5B"/>
+                            <constraint firstAttribute="centerY" secondItem="O2k-Oq-RRl" secondAttribute="centerY" constant="-140" id="dgh-Rr-p4C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlist" id="lF2-8U-OKQ"/>
@@ -61,7 +70,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LPi-dL-CUx" firstAttribute="top" secondItem="owI-je-xMA" secondAttribute="bottom" constant="120" id="M5e-ja-TJ5"/>
@@ -101,6 +109,9 @@
             <point key="canvasLocation" x="181" y="366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="53" height="107"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

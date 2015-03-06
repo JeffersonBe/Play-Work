@@ -10,8 +10,13 @@ import UIKit
 
 class PlaylistDetailViewController: UIViewController {
 
+    @IBOutlet weak var playlistDetailButton: UILabel!
+    var segueTextLabel = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        playlistDetailButton.text = segueTextLabel
 
         // Do any additional setup after loading the view.
     }

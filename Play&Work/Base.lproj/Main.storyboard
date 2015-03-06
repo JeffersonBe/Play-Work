@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KFg-Q3-eNd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Playlist-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Play_Work" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="PlaylistMasterViewController" customModule="Play_Work" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,12 +16,89 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2k-Oq-RRl">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="N9h-v3-KNy" kind="push" identifier="showPlaylistDetail" id="2pz-i4-vWZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22470861673355103" green="0.99864107370376587" blue="0.92243188619613647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="O2k-Oq-RRl" secondAttribute="centerX" id="ki5-dU-mhn"/>
+                            <constraint firstAttribute="centerY" secondItem="O2k-Oq-RRl" secondAttribute="centerY" id="vuL-Fz-wW8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlist" id="lF2-8U-OKQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181.33333333333334" y="366.36000000000001"/>
+            <point key="canvasLocation" x="713" y="366"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="tVI-RP-JZI">
+            <objects>
+                <viewController id="N9h-v3-KNy" customClass="PlaylistDetailViewController" customModule="Play_Work" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="owI-je-xMA"/>
+                        <viewControllerLayoutGuide type="bottom" id="CxK-2q-LAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Mf-j1-h17">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LPi-dL-CUx">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1h-15-DdP">
+                                <rect key="frame" x="139" y="404" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LPi-dL-CUx" firstAttribute="top" secondItem="owI-je-xMA" secondAttribute="bottom" constant="120" id="M5e-ja-TJ5"/>
+                            <constraint firstAttribute="centerX" secondItem="l1h-15-DdP" secondAttribute="centerX" id="Tpp-Ac-Jne"/>
+                            <constraint firstAttribute="centerY" secondItem="LPi-dL-CUx" secondAttribute="centerY" id="YcZ-fM-IeV"/>
+                            <constraint firstAttribute="centerX" secondItem="LPi-dL-CUx" secondAttribute="centerX" id="ZU3-S0-w9a"/>
+                            <constraint firstAttribute="centerX" secondItem="l1h-15-DdP" secondAttribute="centerX" id="a1v-Lk-4ul"/>
+                            <constraint firstItem="l1h-15-DdP" firstAttribute="top" secondItem="LPi-dL-CUx" secondAttribute="bottom" constant="20" id="mhI-Cz-6hS"/>
+                            <constraint firstItem="LPi-dL-CUx" firstAttribute="leading" secondItem="2Mf-j1-h17" secondAttribute="leadingMargin" constant="44" id="tpE-7C-zI7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="qfa-Xl-7Yi"/>
+                    <connections>
+                        <outlet property="playlistDetailButton" destination="l1h-15-DdP" id="FWa-kj-ROD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPH-3Y-FpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IwZ-YX-ZcP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KFg-Q3-eNd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="35B-tC-3ka">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="fEt-Kn-0AI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyX-o1-eDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="366"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

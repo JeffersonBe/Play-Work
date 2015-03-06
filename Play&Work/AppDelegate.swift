@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Play&Work
+//  playli
 //
 //  Created by Jefferson Bonnaire on 05/03/15.
 //  Copyright (c) 2015 Jefferson Bonnaire. All rights reserved.

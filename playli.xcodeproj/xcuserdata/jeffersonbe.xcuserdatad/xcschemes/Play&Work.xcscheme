@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4D63F0C1AA91A330048E3CC"
-               BuildableName = "Play&amp;Work.app"
-               BlueprintName = "Play&amp;Work"
-               ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+               BuildableName = "playli.app"
+               BlueprintName = "playli"
+               ReferencedContainer = "container:playli.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4D63F211AA91A330048E3CC"
-               BuildableName = "Play&amp;WorkTests.xctest"
-               BlueprintName = "Play&amp;WorkTests"
-               ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+               BuildableName = "playliTests.xctest"
+               BlueprintName = "playliTests"
+               ReferencedContainer = "container:playli.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B4D63F211AA91A330048E3CC"
-               BuildableName = "Play&amp;WorkTests.xctest"
-               BlueprintName = "Play&amp;WorkTests"
-               ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+               BuildableName = "playliTests.xctest"
+               BlueprintName = "playliTests"
+               ReferencedContainer = "container:playli.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4D63F0C1AA91A330048E3CC"
-            BuildableName = "Play&amp;Work.app"
-            BlueprintName = "Play&amp;Work"
-            ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+            BuildableName = "playli.app"
+            BlueprintName = "playli"
+            ReferencedContainer = "container:playli.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4D63F0C1AA91A330048E3CC"
-            BuildableName = "Play&amp;Work.app"
-            BlueprintName = "Play&amp;Work"
-            ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+            BuildableName = "playli.app"
+            BlueprintName = "playli"
+            ReferencedContainer = "container:playli.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B4D63F0C1AA91A330048E3CC"
-            BuildableName = "Play&amp;Work.app"
-            BlueprintName = "Play&amp;Work"
-            ReferencedContainer = "container:Play&amp;Work.xcodeproj">
+            BuildableName = "playli.app"
+            BlueprintName = "playli"
+            ReferencedContainer = "container:playli.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -28,13 +28,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B4D63F0D1AA91A330048E3CC /* Play&Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Play&Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D63F0D1AA91A330048E3CC /* playli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D63F111AA91A330048E3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D63F121AA91A330048E3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D63F141AA91A330048E3CC /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		B4D63F171AA91A330048E3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4D63F191AA91A330048E3CC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B4D63F221AA91A330048E3CC /* Play&WorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Play&WorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D63F221AA91A330048E3CC /* playliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D63F271AA91A330048E3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4D63F281AA91A330048E3CC /* Play_WorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Play_WorkTests.swift; sourceTree = "<group>"; };
 		B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B40F70811AAA1D4C00FEB845 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4D63F141AA91A330048E3CC /* PlaylistMasterViewController.swift */,
+				B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B40F70821AAA1D5600FEB845 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4F11A921AA943DF003043FD /* Playlist.swift */,
+				B4F11A901AA942DE003043FD /* MusicLibrary.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B4D63F041AA91A330048E3CC = {
 			isa = PBXGroup;
 			children = (
@@ -72,8 +90,8 @@
 		B4D63F0E1AA91A330048E3CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4D63F0D1AA91A330048E3CC /* Play&Work.app */,
-				B4D63F221AA91A330048E3CC /* Play&WorkTests.xctest */,
+				B4D63F0D1AA91A330048E3CC /* playli.app */,
+				B4D63F221AA91A330048E3CC /* playliTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,10 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				B4D63F121AA91A330048E3CC /* AppDelegate.swift */,
-				B4D63F141AA91A330048E3CC /* PlaylistMasterViewController.swift */,
-				B4D63F341AA91AFF0048E3CC /* PlaylistDetailViewController.swift */,
-				B4F11A921AA943DF003043FD /* Playlist.swift */,
-				B4F11A901AA942DE003043FD /* MusicLibrary.swift */,
+				B40F70811AAA1D4C00FEB845 /* Controllers */,
+				B40F70821AAA1D5600FEB845 /* Models */,
 				B4D63F161AA91A330048E3CC /* Main.storyboard */,
 				B4D63F191AA91A330048E3CC /* Images.xcassets */,
 				B4D63F101AA91A330048E3CC /* Supporting Files */,
@@ -121,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4D63F0C1AA91A330048E3CC /* Play&Work */ = {
+		B4D63F0C1AA91A330048E3CC /* playli */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4D63F2C1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "Play&Work" */;
+			buildConfigurationList = B4D63F2C1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "playli" */;
 			buildPhases = (
 				B4D63F091AA91A330048E3CC /* Sources */,
 				B4D63F0A1AA91A330048E3CC /* Frameworks */,
@@ -133,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = "Play&Work";
+			name = playli;
 			productName = "Play&Work";
-			productReference = B4D63F0D1AA91A330048E3CC /* Play&Work.app */;
+			productReference = B4D63F0D1AA91A330048E3CC /* playli.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B4D63F211AA91A330048E3CC /* Play&WorkTests */ = {
+		B4D63F211AA91A330048E3CC /* playliTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4D63F2F1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "Play&WorkTests" */;
+			buildConfigurationList = B4D63F2F1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "playliTests" */;
 			buildPhases = (
 				B4D63F1E1AA91A330048E3CC /* Sources */,
 				B4D63F1F1AA91A330048E3CC /* Frameworks */,
@@ -151,9 +167,9 @@
 			dependencies = (
 				B4D63F241AA91A330048E3CC /* PBXTargetDependency */,
 			);
-			name = "Play&WorkTests";
+			name = playliTests;
 			productName = "Play&WorkTests";
-			productReference = B4D63F221AA91A330048E3CC /* Play&WorkTests.xctest */;
+			productReference = B4D63F221AA91A330048E3CC /* playliTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B4D63F081AA91A330048E3CC /* Build configuration list for PBXProject "Play&Work" */;
+			buildConfigurationList = B4D63F081AA91A330048E3CC /* Build configuration list for PBXProject "playli" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -187,8 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4D63F0C1AA91A330048E3CC /* Play&Work */,
-				B4D63F211AA91A330048E3CC /* Play&WorkTests */,
+				B4D63F0C1AA91A330048E3CC /* playli */,
+				B4D63F211AA91A330048E3CC /* playliTests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,7 +254,7 @@
 /* Begin PBXTargetDependency section */
 		B4D63F241AA91A330048E3CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B4D63F0C1AA91A330048E3CC /* Play&Work */;
+			target = B4D63F0C1AA91A330048E3CC /* playli */;
 			targetProxy = B4D63F231AA91A330048E3CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -338,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Play&Work/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = playli;
 			};
 			name = Debug;
 		};
@@ -348,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Play&Work/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = playli;
 			};
 			name = Release;
 		};
@@ -366,8 +382,8 @@
 				);
 				INFOPLIST_FILE = "Play&WorkTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Play&Work.app/Play&Work";
+				PRODUCT_NAME = playliTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playli.app/playli";
 			};
 			name = Debug;
 		};
@@ -381,15 +397,15 @@
 				);
 				INFOPLIST_FILE = "Play&WorkTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Play&Work.app/Play&Work";
+				PRODUCT_NAME = playliTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playli.app/playli";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4D63F081AA91A330048E3CC /* Build configuration list for PBXProject "Play&Work" */ = {
+		B4D63F081AA91A330048E3CC /* Build configuration list for PBXProject "playli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4D63F2A1AA91A330048E3CC /* Debug */,
@@ -398,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4D63F2C1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "Play&Work" */ = {
+		B4D63F2C1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "playli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4D63F2D1AA91A330048E3CC /* Debug */,
@@ -407,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4D63F2F1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "Play&WorkTests" */ = {
+		B4D63F2F1AA91A330048E3CC /* Build configuration list for PBXNativeTarget "playliTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4D63F301AA91A330048E3CC /* Debug */,

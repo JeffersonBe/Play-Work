@@ -10,9 +10,14 @@ import UIKit
 
 class PlaylistMasterViewController: UIViewController {
 
+    @IBOutlet weak var playlistImageView0: UIImageView!
+    @IBOutlet weak var buttonToDetail: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let playslist = Playlist(index: 4)
+        playlistImageView0.image = playslist.icon
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,8 +28,7 @@ class PlaylistMasterViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showPlaylistDetail" {
             let playlistDetailController = segue.destinationViewController as PlaylistDetailViewController
-            playlistDetailController.segueTextLabel = "Roger that!"
-            
+            playlistDetailController.playlist = Playlist(index: 0)
         }
     }
 
